@@ -1,0 +1,7 @@
+
+/* Reset do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(157, 178, 182);
+}
