@@ -1,7 +1,108 @@
-
 /* Reset do navegador */
-* {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(157, 178, 182);
+
+/* Anotações
+ padding = preenchimento
+margin = margem (rotação: top, right, bottom, left)
+a = href
+*/
+
+
+
+
+* { margin: 0px;   padding: 0px;list-style: none;}
+
+
+body
+ {background: rgb(255, 220, 238)}
+
+a 
+{text-decoration: none; color: rgb(83, 156, 83)}
+
+
+a:hover 
+{color: rgb(37, 26, 26) }
+
+
+i
+ {color: rgb(0, 0, 0); }
+                
+
+#header 
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;         
+    align-items: center;
+    width: 100%;
+    padding: 5px 15px;
+    z-index: 2; 
+}
+
+.trocar-tema { 
+    display: fixed;
+    font-size: 20px; 
+    justify-content: flex-end; 
+}
+
+#trocarTema {
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    transition: ;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    gap: 15px;
+}
+
+.menu-item { 
+    width: 100%;
+}
+
+.menu-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.menu-mobile {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    border-top: 1px solid #ff0000;
+}
+
+.menu-mobile .menu-link {
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px 10px;
+}
+
+.menu-link.active .menu-icon, 
+.menu-link.active .menu-text,
+.menu-link:hover .menu-icon,
+.menu-link:hover .menu-text {
+    color: #ff0000;
+    font-size: 20px;
+    transition: ease-in-out .3s;
+}
+
+.menu-icon,
+.menu-text {
+    color: ;
+    font-weight: 600;
+}
+
+.mwnu-icon {
+    font-size: 18;
+    color: rgb(255, 217, 0);
+}
+
+.menu-text {
+    font-size: 14px;
+    text-transform: uppercase;
 }
