@@ -123,4 +123,65 @@ i
     widht: ; */
     background: transparent;
     border: none;
+    color: ;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+    transition: ease-in-out .3s;
+}
+
+.btn span,
+.btn i {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    border: 1px solid white;
+    border-radius: 12px 12px 12px;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;    
+}
+
+.video iframe {
+    width: 60%;
+    aspect-ratio: 16/9;
+}
+
+#home,
+.projetos,
+.sobre,
+.contato {
+    padding: 40px 16px ;
+}
+
+@media (min-width: 768px) {  /* comprimento até */
+
+    #header {
+        position: fixed;
+        border-bottom: 1px solid white;
+        padding: 16px 96px;
+        background: gray;
+    }
+    .nav-mobile {
+        display: none;
+    }
+    .header-nav {
+        display: flex;
+    }
+    .header-nav,
+    .trocar-tema {
+        min-width: 30%;
+    }
 }
